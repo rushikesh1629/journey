@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Login #7</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+
+
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 contents custom-back">
+          <div class="row justify-content-center">
+            <p class="text-center custom-prop">Buy Lorem Ipsum Insurance Plan In 3 Simple Steps</p>
+            <div class="col-md-8 shadow-box">
+              <div class="mb-4">
+                <p class="mb-4 text-center custom-tell mt-3">Tell Us About Yourself?</p>
+              </div>
+              <form action="#" method="post">
+                <div class="custom-gap">
+
+                  <div class="row">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Email ID" aria-label="Email ID">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Mobile No." aria-label="Mobile No.">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Pincode" aria-label="pincode">
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label custom-gender">Select Your Gender</label>
+                    <div class="row">
+                      <div class="col checkbox-list">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label class="form-check-label mr-2 male-label" for="flexRadioDefault1">
+                            Male
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                          <label class="form-check-label female-label" for="flexRadioDefault2">
+                            Female
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex mb-3 align-items-center custom-bottom-border">
+
+                </div>
+                <h5 class="card-title">Who would you like to insure?</h5>
+                <div class="d-flex justify-content-around flex-wrap">
+                  <div class="card card-custom" style="width: 80px;height: 80px;" onclick="toggleBorder(this)"
+                    type="checkbox">
+                    <img src="./images/self.png" class="card-img-top my-1" alt="..." style="width: 40px;height: 45px;">
+                    <div class="card-body card-body-self">
+                      <h5 class="card-title card-title-self">Self</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+                  <div class="card card-custom" style="width: 80px;height: 80px;" onclick="toggleBorder(this)">
+                    <img src="./images/spouse.png" class="card-img-top my-1" alt="..."
+                      style="width: 40px;height: 45px;">
+                    <div class="card-body card-body-self">
+                      <h5 class="card-title card-title-self">Spouse</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+                  <div class="card card-custom" id="card" style="width: 80px;height: 80px;"
+                    onclick="toggleBorder1(this)">
+                    <img src="./images/son.png" class="card-img-top my-1" alt="..." style="width: 40px;height: 45px;">
+                    <div class="card-body card-body-self">
+                      <h5 class="card-title card-title-self mb-2">Son</h5>
+                    </div>
+                    <div id="counter1" class="counter" style="display: none;"><img class="minus"
+                        src="./images/minus.png" alt="" onclick="changeCount1(-1)">
+                      <p id="custom-counter1" class="custom-counter">0</p><img class="plus" src="./images/add.png"
+                        alt="" onclick="changeCount1(1)">
+                    </div>
+                  </div>
+                  <div class="card card-custom" style="width: 80px;height: 80px;" onclick="toggleBorder2(this)">
+                    <img src="./images/daughter.png" class="card-img-top my-1" alt="..."
+                      style="width: 40px;height: 45px;">
+                    <div class="card-body card-body-self">
+                      <h5 class="card-title card-title-self">Daughter</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                    <div id="counter2" class="counter" style="display: none;"><img class="minus"
+                        src="./images/minus.png" alt="" onclick="changeCount2(-1)">
+                      <p id="custom-counter2" class="custom-counter">0</p><img class="plus" src="./images/add.png"
+                        alt="" onclick="changeCount2(1)">
+                    </div>
+                  </div>
+
+
+                </div>
+
+
+                <div class="my-3">
+                  <!-- <div class="col"> -->
+                  <div class="collapse multi-collapse custom-design" id="multiCollapseExample1">
+                    <!-- <div class="card card-body custom-design"> -->
+                    <div class="d-flex justify-content-around flex-wrap">
+                      <div class="card card-custom" style="width: 80px;height: 80px;" onclick="toggleBorder(this)">
+                        <img src="./images/self.png" class="card-img-top my-1" alt="..."
+                          style="width: 40px;height: 45px;">
+                        <div class="card-body card-body-self">
+                          <input class="auto-check" type="checkbox" name="member" id="7" value="17">
+                          <h5 class="card-title card-title-self">Father</h5>
+                          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                      </div>
+                      <div class="card card-custom" style="width: 80px;height: 80px;" onclick="toggleBorder(this)">
+                        <img src="./images/spouse.png" class="card-img-top my-1" alt="..."
+                          style="width: 40px;height: 45px;">
+                        <div class="card-body card-body-self">
+                          <h5 class="card-title card-title-self">Mother</h5>
+                          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                      </div>
+                      <div class="card card-custom" style="width: 80px;height: 80px;" onclick="toggleBorder(this)">
+                        <img src="./images/son.png" class="card-img-top my-1" alt="..."
+                          style="width: 40px;height: 45px;">
+                        <div class="card-body card-body-self">
+                          <h5 class="card-title card-title-self mb-2">Grandfather</h5>
+                        </div>
+                      </div>
+                      <div class="card card-custom" style="width: 80px;height: 80px;" onclick="toggleBorder(this)">
+                        <img src="./images/daughter.png" class="card-img-top my-1" alt="..."
+                          style="width: 40px;height: 45px;">
+                        <div class="card-body card-body-self">
+                          <h5 class="card-title card-title-self">Grandmother</h5>
+                          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- </div> -->
+                  </div>
+                  <!-- </div> -->
+                </div>
+                <p class="d-inline-flex gap-1">
+                  <a class="btn btn-primary slide-down" data-bs-toggle="collapse" href="#multiCollapseExample1"
+                    role="button" aria-expanded="false" aria-controls="multiCollapseExample1">More members
+                    <img class="down-arrow" src="./images/down-arrow.png" alt="" width="30" height="30">
+                    <img class="up-arrow" src="./images/arrow-up.png" alt="" width="23" height="23"
+                      style="display: none;">
+                  </a>
+
+                </p>
+                <button type="button" class="btn btn-primary my-3 custom-continue" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">
+                  Continue
+                </button>
+                <!-- <input type="submit" value="Log In" class="btn btn-block btn-primary my-3"> -->
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title fs-5" id="exampleModalLabel">Select age of insure member(s)</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!-- <input type="number" id="modal-input" value="0"> -->
+                <!-- <div class="mb-3">
+                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Your Age"
+                    maxlength="2">
+                </div> -->
+              </div>
+              <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                <button type="button" class="btn btn-primary custom-submit">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5 my-5">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card shadow custom-size">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <h5 class="card-title">Protect Your Family’s Health With Us</h5>
+                  <div class="d-flex">
+                    <img class="l-img mr-2" src="./images/Vector.png" height="10" width="10" />
+                    <h6 class="r-text">Compare Top Health Insurance Plans</h6>
+                  </div>
+                  <div class="d-flex">
+                    <img class="l-img mr-2" src="./images/Vector.png" height="10" width="10" />
+                    <h6 class="r-text">Instant Policy Insurance</h6>
+                  </div>
+                  <div class="d-flex">
+                    <img class="l-img mr-2" src="./images/Vector.png" height="10" width="10" />
+                    <h6 class="r-text">Get an Unbiased advise</h6>
+                  </div>
+                  <div class="d-flex">
+                    <img class="l-img mr-2" src="./images/Vector.png" height="10" width="10" />
+                    <h6 class="r-text">Free Claims Assistance</h6>
+                  </div>
+                  <img class="person-img w-100" src="./images/f93001854c1109789b2450a58aa5409f-removebg-preview 1.png"
+                    alt="Big Image" id="big-image">
+                  <img class="vec-img" src="./images/Vector 2.png" alt="Small Image" id="small-image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // function toggleBorder(card) {
+    //   card.classList.toggle('selected'); // Toggle the 'selected' class
+    // }
+
+    function toggleBorder(card) {
+      card.classList.toggle('selected'); // Toggle the 'selected' class
+
+      // Find the modal body
+      let modalBody = document.querySelector('#exampleModal .modal-body');
+
+      // Check if the card has the 'selected' class
+      if (card.classList.contains('selected')) {
+        // Get the card's title
+        let title = card.querySelector('.card-title').innerText;
+
+        // Create a new input field for the age
+        let ageInputField = document.createElement('input');
+        ageInputField.type = 'number';
+        ageInputField.className = 'form-control my-3';
+        let inputId = 'exampleFormControlInput1' + title;
+        ageInputField.id = inputId;
+        ageInputField.placeholder = title + ' Age'; // Set the placeholder to the card title
+        ageInputField.maxLength = '2';
+
+        // Store the id of the age input field in a data attribute of the card
+        card.setAttribute('data-input-id', inputId);
+
+        // Add the age input field to the modal body
+        modalBody.appendChild(ageInputField);
+      } else {
+        // If the card is unselected, remove the age input field
+        let ageInputFieldId = card.getAttribute('data-input-id');
+        let ageInputField = document.getElementById(ageInputFieldId);
+        if (ageInputField) {
+          modalBody.removeChild(ageInputField);
+        }
+      }
+    }
+
+
+
+
+
+    function toggleBorder1(card) {
+      card.classList.toggle('selected'); // Toggle the 'selected' class
+    }
+    function toggleBorder2(card) {
+      card.classList.toggle('selected'); // Toggle the 'selected' class
+    }
+
+    function toggleBorder1(card) {
+      let counter1 = document.getElementById('counter1');
+      card.classList.toggle('selected'); // Toggle the 'selected' class on the card
+
+      // Check if the card has the 'selected' class and toggle the counter visibility accordingly
+      if (card.classList.contains('selected')) {
+        counter1.style.display = 'flex'; // Show counter
+      } else {
+        counter1.style.display = 'none'; // Hide counter
+      }
+    }
+
+
+
+    function toggleBorder2(card) {
+      let counter2 = document.getElementById('counter2');
+      card.classList.toggle('selected'); // Toggle the 'selected' class on the card
+
+      // Check if the card has the 'selected' class and toggle the counter visibility accordingly
+      if (card.classList.contains('selected')) {
+        counter2.style.display = 'flex'; // Show counter
+      } else {
+        counter2.style.display = 'none'; // Hide counter
+      }
+    }
+
+    // // JavaScript function to change the count
+    // function changeCount1(value) {
+    //   let counterElement = document.getElementById('custom-counter1');
+    //   let currentCount = parseInt(counterElement.innerText, 10);
+    //   currentCount += value;
+
+    //   // Ensure the count never goes below 0
+    //   if (currentCount < 0) {
+    //     currentCount = 0;
+    //   }
+
+    //   counterElement.innerText = currentCount;
+
+    //   // Prevent the click event from propagating up to the card
+    //   event.stopPropagation();
+    // }
+
+
+    // Function to be called when "son card" is selected
+    function onSonCardSelected() {
+      let counterElement = document.getElementById('custom-counter1');
+      counterElement.innerText = 1; // Set the counter to 1
+
+      // Generate the first input field
+      addInputFieldInModal(1);
+    }
+
+    // JavaScript function to change the count and add/remove input field in modal
+    function changeCount1(value) {
+      let counterElement = document.getElementById('custom-counter1');
+      let currentCount = parseInt(counterElement.innerText, 10);
+      currentCount += value;
+
+      // Ensure the count never goes below 0
+      if (currentCount < 0) {
+        currentCount = 0;
+      } else if (value > 0) { // Add input field if the counter is increasing
+        addInputFieldInModal(currentCount);
+      } else if (value < 0) { // Remove input field if the counter is decreasing
+        removeInputFieldInModal(currentCount + 1);
+      }
+
+      counterElement.innerText = currentCount;
+
+      // Prevent the click event from propagating up to the card
+      event.stopPropagation();
+    }
+
+    // Function to add input field in modal
+    function addInputFieldInModal(count) {
+      let modalBody = document.querySelector('.modal-body');
+      let newInput = document.createElement('input');
+      newInput.type = 'number';
+      newInput.className = 'form-control my-3';
+      newInput.id = 'input' + count;
+      newInput.placeholder = 'Age of son ' + count;
+
+      // Check if the input field already exists before appending it
+      if (!document.getElementById('input' + count)) {
+        modalBody.appendChild(newInput);
+      }
+    }
+
+    // Function to remove input field from modal
+    function removeInputFieldInModal(count) {
+      let inputFieldToRemove = document.getElementById('input' + count);
+      if (inputFieldToRemove) {
+        inputFieldToRemove.remove();
+      }
+    }
+
+    // Call the function initially to generate the first input field
+    changeCount1(-1);
+
+
+    // JavaScript function to change the count and add/remove input field in modal
+    function changeCount2(value) {
+      let counterElementnew = document.getElementById('custom-counter2');
+      let currentCountnew = parseInt(counterElementnew.innerText, 10);
+      currentCountnew += value;
+
+      // Ensure the count never goes below 0
+      if (currentCountnew < 0) {
+        currentCountnew = 0;
+      } else if (value > 0) { // Add input field if the counter is increasing
+        addInputFieldInModalNew(currentCountnew);
+      } else if (value < 0) { // Remove input field if the counter is decreasing
+        removeInputFieldInModalNew(currentCountnew + 1);
+      }
+
+      counterElementnew.innerText = currentCountnew;
+
+      // Prevent the click event from propagating up to the card
+      event.stopPropagation();
+    }
+        // Call the function initially to generate the first input field
+        changeCount2(-1);
+
+    // Function to add input field in modal
+    function addInputFieldInModalNew(count) {
+      let modalBodyNew = document.querySelector('.modal-body');
+      let newInputNew = document.createElement('input');
+      newInputNew.type = 'number';
+      newInputNew.className = 'form-control my-3';
+      newInputNew.id = 'inputNew' + count;
+      newInputNew.placeholder = 'Age of daughter ' + count;
+
+      // Check if the input field already exists before appending it
+      if (!document.getElementById('inputNew' + count)) {
+        modalBodyNew.appendChild(newInputNew);
+      }
+    }
+
+    // Function to remove input field from modal
+    function removeInputFieldInModalNew(count) {
+      let inputFieldToRemoveNew = document.getElementById('inputNew' + count);
+      if (inputFieldToRemoveNew) {
+        inputFieldToRemoveNew.remove();
+      }
+    }
+    
+
+    // // JavaScript function to change the count
+    // function changeCount2(value) {
+    //   let counterElement = document.getElementById('custom-counter2');
+    //   let currentCount = parseInt(counterElement.innerText, 10);
+    //   currentCount += value;
+
+    //   // Ensure the count never goes below 0
+    //   if (currentCount < 0) {
+    //     currentCount = 0;
+    //   }
+
+    //   counterElement.innerText = currentCount;
+
+    //   // Prevent the click event from propagating up to the card
+    //   event.stopPropagation();
+    // }
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const downArrow = document.querySelector(".down-arrow");
+      const upArrow = document.querySelector(".up-arrow");
+
+      // Add a click event listener to the button
+      document.querySelector(".slide-down").addEventListener("click", function () {
+        // Toggle the visibility of the arrow images
+        downArrow.style.display = downArrow.style.display === "none" ? "inline" : "none";
+        upArrow.style.display = upArrow.style.display === "none" ? "inline" : "none";
+      });
+    });
+
+  </script>
+</body>
+
+</html>
